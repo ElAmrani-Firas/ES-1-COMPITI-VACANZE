@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  .memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+
+
+/* ... Rest of the CSS ... */
+
+/* ... Rest of the CSS ... */
+
+.card {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  background-size: cover;
+  background-image: url('card-cover.png'); /* Set default background */
+}
+
+.card.active {
+  background-image: none;
+  background-color: #007bff;
+  color: white;
+}
+
+.card.matched {
+  background-image: url('matched-card.png');
+  background-size: cover;
+  background-color: #f0f0f0; /* Reset background color for matched card */
+}
+
+/* ... Rest of the CSS ... */
+  
+  .card-cover {
+    background-color: #007bff;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .feedback-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #feedback {
+    font-size: 40px;
+    color: red;
+  }
+  
